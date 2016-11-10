@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		EA5E5F661D6E30DD00F89B90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E5F651D6E30DD00F89B90 /* AppDelegate.swift */; };
-		EA5E5F681D6E30DD00F89B90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E5F671D6E30DD00F89B90 /* ViewController.swift */; };
+		EA5E5F681D6E30DD00F89B90 /* CanvasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E5F671D6E30DD00F89B90 /* CanvasVC.swift */; };
 		EA5E5F6B1D6E30DD00F89B90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5E5F691D6E30DD00F89B90 /* Main.storyboard */; };
 		EA5E5F6D1D6E30DD00F89B90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5E5F6C1D6E30DD00F89B90 /* Assets.xcassets */; };
 		EA5E5F701D6E30DD00F89B90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5E5F6E1D6E30DD00F89B90 /* LaunchScreen.storyboard */; };
+		EA5E5F791D6E321B00F89B90 /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E5F781D6E321B00F89B90 /* Canvas.swift */; };
+		EA5E5F7B1D6E3FD300F89B90 /* QuartzFun.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E5F7A1D6E3FD300F89B90 /* QuartzFun.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EA5E5F621D6E30DD00F89B90 /* Drawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5E5F651D6E30DD00F89B90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA5E5F671D6E30DD00F89B90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA5E5F671D6E30DD00F89B90 /* CanvasVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasVC.swift; sourceTree = "<group>"; };
 		EA5E5F6A1D6E30DD00F89B90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA5E5F6C1D6E30DD00F89B90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA5E5F6F1D6E30DD00F89B90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA5E5F711D6E30DD00F89B90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA5E5F781D6E321B00F89B90 /* Canvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
+		EA5E5F7A1D6E3FD300F89B90 /* QuartzFun.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuartzFun.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		EA5E5F641D6E30DD00F89B90 /* Drawing */ = {
 			isa = PBXGroup;
 			children = (
-				EA5E5F651D6E30DD00F89B90 /* AppDelegate.swift */,
-				EA5E5F671D6E30DD00F89B90 /* ViewController.swift */,
+				EA5E5F771D6E30E500F89B90 /* Supporting */,
+				EA5E5F671D6E30DD00F89B90 /* CanvasVC.swift */,
+				EA5E5F7A1D6E3FD300F89B90 /* QuartzFun.swift */,
+				EA5E5F781D6E321B00F89B90 /* Canvas.swift */,
 				EA5E5F691D6E30DD00F89B90 /* Main.storyboard */,
 				EA5E5F6C1D6E30DD00F89B90 /* Assets.xcassets */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+		EA5E5F771D6E30E500F89B90 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				EA5E5F651D6E30DD00F89B90 /* AppDelegate.swift */,
 				EA5E5F6E1D6E30DD00F89B90 /* LaunchScreen.storyboard */,
 				EA5E5F711D6E30DD00F89B90 /* Info.plist */,
 			);
-			path = Drawing;
+			name = Supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +111,7 @@
 					EA5E5F611D6E30DD00F89B90 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = ML9FUD8KSJ;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -136,8 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA5E5F681D6E30DD00F89B90 /* ViewController.swift in Sources */,
+				EA5E5F681D6E30DD00F89B90 /* CanvasVC.swift in Sources */,
 				EA5E5F661D6E30DD00F89B90 /* AppDelegate.swift in Sources */,
+				EA5E5F791D6E321B00F89B90 /* Canvas.swift in Sources */,
+				EA5E5F7B1D6E3FD300F89B90 /* QuartzFun.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +271,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.martinmatejka2.Drawing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -265,6 +283,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.martinmatejka2.Drawing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -287,6 +306,7 @@
 				EA5E5F761D6E30DD00F89B90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
